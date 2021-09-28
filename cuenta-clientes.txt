@@ -1,0 +1,24 @@
+Visual Studio Code
+1. Abrir una terminal
+Ctrl+Shift+P-> Terminal Integrate
+2. npm init --yes: Instala un package.json que es un py de configuracion
+3. instalar los paquetes a utilizar:
+	npm i 
+        express es el framewrk mas popular de nodejs para la creacion de aplicaciones backend
+	express-handlebars es la integracion del motor de plantillas handlebars en express. Otras opciones son jade, pug, ejs, jinja, etc
+	express-session que administra las sesiones de nuestra app, serà necesario para autenticar a un usuario
+	mysql, es un modulo de npm para conectarnos a la base de datos, este modulo no es la base de datos, tan solo sirve para conectarnos  hacer consultas.
+	express-mysql-session, este modulo almacenara las sesiones en la base de atos, en lugar del servidor, esto es ideal cuando la aplicacion este en productivo
+	morgan, es un modulo que nos permite crear logs o mensajes de que es lo que las aplicaciones clientes estan pidiendo al servidor
+	bcryptjs, este modulo lo usaremos para cifrar las contraseñas de los usuarios antes de guardarlos en la base de datos.
+	passport, es un modulo para autentica y manejar el proceso de login de un usuario en nuestra aplicacion
+	passport-local, es un complemento de passport para autenticar a los usuarios con nuestra propia base de datos.
+	timeago.js, este modulo convierte los timestamps o fehas de la base de datos en un formato de: 2inutos ago, 2 hours ago, etc
+	express-validator, es un modulo para validar los datos que el usaurio nos envia desde la aplicacion cliente
+
+
+npm i express express-handlebars express-session mysql express-mysql-session morgan bcryptjs passport passport-local timeago.js express-validator
+
+para iniciar el servidor debemos dar la siguiente orden :
+npm run dev
+	
